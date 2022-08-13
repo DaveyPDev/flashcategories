@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Lucky # {% endblock %}
+{% block page_name %} Are you feeling lucky? {% endblock %}
+
+{% block content %}
+   
+    <h1>Your lucky number is: {{lucky_num}}</h1>
+    <p>{{msg}}</p>
+    {% if lucky_num == 5 %}
+    <h2>Thats my lucky number!</h2>
+    <img src="https://media2.giphy.com/media/3ndAvMC5LFPNMCzq7m/giphy.webp?cid=ecf05e478yaqkopzesp6qilxm3p849pi1eh905epd7zo1buj&rid=giphy.webp&ct=g" alt="">
+    {% else %}
+    <h2>Not my lucky number</h2>
+    <img src="https://media3.giphy.com/media/W9gHkIonu8qXI7AC1y/giphy.webp?cid=ecf05e47p46siksig8yp3y7ieb42gew2fiincdr18yqn0y30&rid=giphy.webp&ct=g" alt="">
+    {% endif %}
+
+{% endblock %}

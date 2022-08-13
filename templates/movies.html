@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Movies List {% endblock %}
+
+{% block page_name %} You are on the movie list {% endblock %}
+
+{% block content %}
+
+<h1>All Movies</h1>
+
+<ul>
+    {% for movie in movies %}
+    <li>{{movie}}</li>
+    {% endfor %}
+</ul>
+
+<form action="/movies/new" method="POST">
+    <input type="text" placeholder="movie title" name="title" id="">
+    <button>Submit</button>
+</form>
+
+{% endblock%}

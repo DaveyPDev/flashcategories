@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Greeter Form {% endblock %}
+{% block page_name %} You are on Greeter Form  {% endblock %}
+
+{% block content %}
+
+
+
+    <form action="/greet">
+        <h1>Greeter Form</h1>
+        <input type="text" placeholder="your name" name="username">
+        <button>Submit</button>
+    </form>
+
+{% endblock %}
+    
